@@ -5,18 +5,18 @@ PRODUCT_RELEASE_NAME := shamu
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common Slim stuff.
-$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+# Inherit some common orion stuff.
+$(call inherit-product, vendor/orion/config/common_full_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/orion/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/motorola/shamu/aosp_shamu.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := shamu
-PRODUCT_NAME := slim_shamu
+PRODUCT_NAME := orion_shamu
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 6
 PRODUCT_MANUFACTURER := motorola
